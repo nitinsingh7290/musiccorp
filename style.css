@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, black, rgb(5, 5, 62), black);
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ---------------Navbar------------ */
+nav {
+    background: transparent
+}
+
+#navbarSupportedContent ul li {
+    margin-left: 50px;
+}
+
+.nav-item a {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* ---------------Slider------------- */
+.carousel {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.carousel div div img {
+    border-radius: 50px;
+}
+
+/* -------------Songs---------------- */
+.heading {
+    margin-top: 20px;
+    display: block;
+    padding: 10px 50px;
+}
+
+.heading h2 {
+    color: aliceblue;
+    font-family: monospace;
+}
+
+.albums {
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.albums::-webkit-scrollbar{
+    width: 0;
+}
+
+.container {
+    position: relative;
+    display: inline;
+}
+
+.image {
+    display: inline;
+    height: 120px;
+    width: auto;
+    transition: .5s ease;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.image:hover{
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+        margin: 0;
+    }
+
+    .carousel div div img {
+        border-radius: 0;
+    }
+
+    .albums {
+        padding: 10px;
+    }
+
+    .heading {
+        margin-top: 5px;
+        display: inline;
+        justify-content: left;
+    }
+
+    .heading h2 {
+        color: aliceblue;
+        margin-left: 15px;
+    }
+
+    .albums div {
+        display: inline-block;
+        margin-left: 15px;
+        width: auto;
+    }
+
+    .albums div img {
+        height: 120px;
+        width: auto;
+        margin-top: 20px;
+    }
+}
